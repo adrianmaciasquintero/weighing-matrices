@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+ENV/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local generated/intermediate files
+*.log
+*.tmp
+
+# Tools / caches
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/

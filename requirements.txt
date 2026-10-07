@@ -1,0 +1,5 @@
+# Python >= 3.8 (uses math.isqrt)
+numpy>=1.21
+
+# Optional: only needed for `verify_weighing.py --export report.xlsx`
+# openpyxl>=3.0
