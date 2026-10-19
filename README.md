@@ -3,7 +3,7 @@
 
 Computational construction and exact verification of weighing matrices
 
-W(n,k),    n = 0 mod 4,    1 <= k <= n,
+W(n,k),    n ≡ 0 mod 4,    1 ≤ k ≤ n,
 
 for all orders
 
