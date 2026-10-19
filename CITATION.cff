@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "If you use this dataset or code, please cite it as below."
-title: "Weighing Matrices W(n,k) for n ≡ 0 (mod 4), n <= 100: Constructions and Exact Verification"
+title: "Weighing Matrices W(n,k) for n ≡ 0 (mod 4), n ≤ 108: Constructions and Exact Verification"
 abstract: >-
   Computational construction and exact verification of one weighing matrix
-  W(n,k) for every order n = 4, 8, ..., 100 (n ≡ 0 mod 4) and every weight
-  k = 1, ..., n (1300 cases in total). The matrices are obtained from
+  W(n,k) for every order n = 4, 8, ..., 108 (n ≡ 0 mod 4) and every weight
+  k = 1, ..., n (1512 cases in total). The matrices are obtained from
   identity, Hadamard 2x2 blocks, direct sums, Kronecker products, Paley
   constructions, skew-Hadamard doubling and Goethals-Seidel arrays (exhaustive
   search or simulated annealing). Every stored matrix is checked exactly with
@@ -14,8 +14,8 @@ authors:
   - family-names: "Macías-Quintero"
     given-names: "Adrián"
     orcid: "https://orcid.org/0009-0002-3638-9559"
-version: "1.0.0"
-date-released: "2026-10-07"
+version: "1.1.0"
+date-released: "2026-10-19"
 license: Apache-2.0
 repository-code: "https://github.com/adrianmaciasquintero/weighing-matrices"
 keywords:

@@ -1,5 +1,5 @@
 
-# Weighing Matrices W(n,k) for n ≡ 0 (mod 4), n <= 100: Constructions and Exact Verification
+# Weighing Matrices W(n,k) for n ≡ 0 (mod 4), n ≤ 108: Constructions and Exact Verification
 
 Computational construction and exact verification of weighing matrices
 
@@ -7,11 +7,11 @@ W(n,k),    n = 0 mod 4,    1 <= k <= n,
 
 for all orders
 
-n in {4, 8, 12, ..., 100}.
+n in {4, 8, 12, ..., 108}.
 
 This repository contains **one verified weighing matrix for every pair (n,k)** in this range, for a total of
 
-4 + 8 + 12 + ... + 100 = 1300
+4 + 8 + 12 + ... + 100 + 104 + 108 = 1512
 
 cases.
 
@@ -28,14 +28,13 @@ cases.
 ├── remaining_cases.py
 ├── verify_weighing.py
 ├── report.csv
-├── table_W_n_k_technique_time.xlsx
 └── solutions/
     ├── W4_1/
     │   └── solution_001.json
     ├── W4_2/
     │   └── solution_001.json
     ├── ...
-    │── W100_100/
+    │── W108_108/
     │   └── solution_001.json
     └── all_chains_status.csv
 ```
@@ -80,7 +79,7 @@ Equivalently:
 The database covers every order
 
 ```text
-n = 4, 8, 12, ..., 100
+n = 4, 8, 12, ..., 108
 
 ```
 
@@ -93,13 +92,13 @@ k = 1, 2, ..., n.
 
 Therefore the total number of pairs is
 
-Sum_{j=1..25} (4j) = 4 * (25 * 26 / 2) = 1300.
+Sum_{j=1..27} (4j) = 4 * (27 * 28 / 2) = 1512.
 
 Thus, for every
 
-n <= 100,    n = 0 mod 4,
+n ≤ 108,    n ≡ 0 mod 4,
 
-there is at least one stored matrix W(n,k) for every 1 <= k <= n.
+there is at least one stored matrix W(n,k) for every 1 ≤ k ≤ n.
 
 ---
 
@@ -190,7 +189,7 @@ with recipes such as:
 
 The program implements Paley constructions for appropriate prime powers.
 
-For q = 3 mod 4, Paley type I provides
+For q ≡ 3 mod 4, Paley type I provides
 
 W(q+1, q).
 
@@ -210,7 +209,7 @@ paley1_h
 
 for the corresponding Hadamard matrix.
 
-For suitable q = 1 mod 4, Paley type II gives Hadamard matrices of order
+For suitable q ≡ 1 mod 4, Paley type II gives Hadamard matrices of order
 
 2(q+1).
 
@@ -510,28 +509,11 @@ report.csv
 
 contains the verification report.
 
-The file
-
-```text
-table_W_n_k_technique_time.xlsx
-
-```
-
-contains a table ordered by n and then by k, with:
-
-```text
-n
-k
-Technique
-Time_seconds_approx
-
-```
-
-The complete dataset contains **1300 stored cases**.
+The complete dataset contains **1512 stored cases**.
 
 The computation log used to generate the table records the construction method and elapsed time for each (n,k).
 
-Computation was run on an MSI GL65 9SDK laptop (Intel Core i7-9750H @ 2.60 GHz, 16 GB RAM, Windows 11 Home), Python 3.11.4, NumPy 1.26.4. Total Goethals–Seidel annealing time ≈ 26.5 h, mostly for n = 100.
+Computation was run on an MSI GL65 9SDK laptop (Intel Core i7-9750H @ 2.60 GHz, 16 GB RAM, Windows 11 Home), Python 3.11.4, NumPy 1.26.4. Total Goethals–Seidel annealing time was ≈ 26.6 h for n ≤ 100 (of which ≈ 19.3 h for n = 100 alone), ≈ 86.2 h for n = 104, and ≈ 99.7 h for n = 108.
 
 ---
 

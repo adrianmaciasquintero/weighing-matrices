@@ -15,7 +15,7 @@ and a final summary line.
 """
 
 __author__ = "Adrian Macias-Quintero"
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 __license__ = "Apache-2.0"
 __copyright__ = "Copyright (c) 2025 Adrian Macias-Quintero"
 

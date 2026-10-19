@@ -61,7 +61,7 @@ retried unless --retry-failed is given.
 ================================================================
 """
 __author__ = "Adrian Macias-Quintero"
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 __license__ = "Apache-2.0"
 __copyright__ = "Copyright (c) 2025 Adrian Macias-Quintero"
 
@@ -553,8 +553,8 @@ def main():
     ap = argparse.ArgumentParser(description="W(n,k) for every n=4m and k=1..n (cascade of methods).")
     ap.add_argument("--out", default="solutions")
     ap.add_argument("--nmin", type=int, default=4)
-    ap.add_argument("--nmax", type=int, default=100)
-    ap.add_argument("--time-per-k", type=float, default=60000.0, help="annealing seconds per (n,k)")
+    ap.add_argument("--nmax", type=int, default=108)
+    ap.add_argument("--time-per-k", type=float, default=6000000.0, help="annealing seconds per (n,k)")
     ap.add_argument("--iters", type=int, default=0, help="iterations per restart (0 = auto)")
     ap.add_argument("--max-restarts", type=int, default=10 ** 9)
     ap.add_argument("--T0", type=float, default=3.0)
